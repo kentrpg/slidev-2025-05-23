@@ -19,5 +19,10 @@
   "devDependencies": {
     "@shikijs/transformers": "^3.4.1",
     "markdown-it-magic-link": "^0.1.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "monaco-editor": "0.51.0"
+    }
   }
 }
