@@ -1,0 +1,11 @@
+node_modules
+.DS_Store
+.cursor
+.slidev
+.qodo
+dist
+beforeMd
+*.local
+.vite-inspect
+.remote-assets
+components.d.ts
