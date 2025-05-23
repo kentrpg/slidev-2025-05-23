@@ -1,0 +1,79 @@
+:root {
+  --slidev-code-padding: 8px 10px;
+  --slidev-code-font-size: 16px !important;
+  --prism-line-height: 1.5rem; /* for normal code block slidev-code */
+  --slidev-code-line-height: 1.3rem; /* for slidev-code-magic */
+}
+
+/* dark mode start*/
+.light {
+  h1, h2 {
+    color: #1a2e05 !important;
+    font-weight: 400 !important;
+  }
+  .slidev-layout :not(pre) > code {
+    @apply color-[#0ba67a] bg-[#f5f5f5];
+  }
+}
+
+.dark {
+  h1 {
+    color: #e4e4e7 !important;
+  }
+  .slidev-layout :not(pre) > code {
+    @apply color-[#047857] bg-[#262626ee];
+  }
+}
+/* dark mode end */
+
+/* override default style start */
+.slidev-layout {
+  h3 {
+    @apply mb-1;
+  }
+  li {
+    line-height: 2rem;
+  }
+}
+
+/* override default code block style */
+.slidev-code {
+  backdrop-filter: blur(10px);
+  border: 1px solid #eee1;
+}
+/* override default style end */
+
+/* override layout style start */
+.slidev-layout.fact {
+  h1 {
+    font-size: 2rem;
+  }
+  h1 + p {
+    font-size: inherit;
+  }
+}
+
+.slidev-layout.section {
+  .slidev-code-wrapper, ul {
+    @apply inline-block text-left;
+  }
+}
+
+.slidev-layout.two-cols-header {
+  .col-bottom {
+    align-self: start !important;
+  }
+}
+/* override layout style end */
+
+/* custom style start */
+.mark, mark {
+  background-color: transparent;
+  color: #ef4444;
+}
+
+.version {
+  @apply text-zinc-700 text-base;
+  margin-top: -0.7rem !important;
+}
+/* custom style end */

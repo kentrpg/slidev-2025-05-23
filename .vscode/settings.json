@@ -1,0 +1,12 @@
+{
+    "github.copilot.enable": {
+        "markdown": true
+    },
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true
+        }
+    },
+}
