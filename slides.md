@@ -3,6 +3,7 @@ theme: seriph
 highlighter: shiki
 css: unocss
 layout: cover
+colorSchema: dark
 drawings:
   persist: true
 transition: fade-out
